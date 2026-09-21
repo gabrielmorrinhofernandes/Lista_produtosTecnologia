@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo {
+    text-align: center;
+    margin: 20px 0;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    }
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #f6ec7d;
+}
+.produto-imagem{
+    max-width: 100px;
+    max-height: 100px;
+}
