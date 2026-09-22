@@ -8,17 +8,17 @@
 </head>
 <body>
     <header>
-        <h2 class="texto">AmaSON</h2>
+        <h2 class="nome-site">AmaSON</h2>
+        <h1 class="titulo">Produtos tecnologia</h1>
+        <div class="div-form">
+            <form id="product-form" class="product-form">
+                <input type="search" name="product_category" placeholder="Buscar produto" id="product_category" class="filter-category">
+                <button type="submit" id="filter-button" class="filter-button">Buscar</button>
+            </form>
+        </div>
     </header>
     <div class="container">
-    <div class="header">
-        <h1 class="titulo">Lista de Produtos</h1>
-        <form id="product-form" class="product-form">
-            <input type="search" name="product_category" placeholder="Buscar produto" id="product_category">
-            <button type="submit" id="filter-button">Buscar</button>
-        </form>
-    </div>
-    <div id="product-list" class="product-list"></div>
+        <div id="product-list" class="product-list"></div>
     </div>
     <script src="script.js">
     </script>
