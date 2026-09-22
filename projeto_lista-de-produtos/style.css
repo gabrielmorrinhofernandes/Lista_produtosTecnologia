@@ -2,9 +2,17 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000229;
+}
 .titulo {
     text-align: center;
     margin: 20px 0;
+    color: white;
+}
+.texto{
+    color: white;
 }
 .product-list {
     display: flex;
@@ -18,8 +26,24 @@
     width: 200px;
     text-align: center;
     background-color: #f6ec7d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .produto-imagem{
     max-width: 100px;
     max-height: 100px;
+}
+.fundo_imagem{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: 0 auto;
+    padding: 20px;
 }
