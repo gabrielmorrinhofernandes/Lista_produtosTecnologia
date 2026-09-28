@@ -192,7 +192,8 @@ function filtrarProdutos(event) {
 
   const produtosFiltrados = produtosTecnologia.filter((produto) => {
     return produto.categoria.toLowerCase().includes(categoria) ||
-      produto.nome.toLowerCase().includes(categoria);
+      produto.nome.toLowerCase().includes(categoria) ||
+      produto.descricao.toLowerCase().includes(categoria);
   });
 
   renderizarProdutos(produtosFiltrados);
