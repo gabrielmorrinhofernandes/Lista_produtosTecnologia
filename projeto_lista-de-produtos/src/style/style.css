@@ -47,7 +47,7 @@ header {
 .quick-buttons-div {
     display: flex;
     justify-content: center;
-    gap: 0.625rem;
+    gap: 0.7rem;
     flex-wrap: wrap;
 }
 .quick-button {
@@ -60,6 +60,20 @@ header {
     font-weight: 700;
     cursor: pointer;
     max-width: 100%;
+}
+.quick-button:hover {
+    background: #f3a847;
+}
+.quick-button-clear {
+    background: var(--amazon-blue);
+    color: #fff;
+}
+.quick-button-active {
+    background: var(--amazon-blue);
+    color: #fff;
+}
+.quick-button-active:hover {
+    background: #1b2733;
 }
 .div-form {
     display: flex;

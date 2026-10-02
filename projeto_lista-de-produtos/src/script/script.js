@@ -147,6 +147,7 @@ const gameButton = document.getElementById('Games_button');
 const pcButton = document.getElementById('Pc_button');
 const phoneButton = document.getElementById('Phone_button');
 const perifericButton = document.getElementById('Periferic_button');
+const clearButton = document.getElementById('Clear_button');
 const botoesCategoria = [
   { botao: gameButton, categoria: "Games" },
   { botao: pcButton, categoria: "Computadores" },
@@ -191,9 +192,21 @@ document.getElementById('filter-button').addEventListener('click', (event) => {
 select.addEventListener("input", filtrarProdutos);
 botoesCategoria.forEach(({ botao, categoria }) => {
   botao.addEventListener("click", () => {
+    botoesCategoria.forEach(({ botao: outroBotao }) => {
+      outroBotao.classList.remove("quick-button-active");
+    });
+    botao.classList.add("quick-button-active");
     select.value = categoria;
     filtrarProdutos();
   });
+
+});
+clearButton.addEventListener("click", () => {
+  botoesCategoria.forEach(({ botao }) => {
+    botao.classList.remove("quick-button-active");
+  });
+  select.value = "";
+  filtrarProdutos();
 });
 renderizarProdutos(produtosTecnologia);
 function filtrarProdutos() {
@@ -204,7 +217,6 @@ function filtrarProdutos() {
     renderizarProdutos(produtosTecnologia);
     return;
   }
-
   const produtosFiltrados = produtosTecnologia.filter((produto) => {
     return produto.categoria.toLowerCase().includes(categoria) ||
       produto.nome.toLowerCase().includes(categoria) ||
