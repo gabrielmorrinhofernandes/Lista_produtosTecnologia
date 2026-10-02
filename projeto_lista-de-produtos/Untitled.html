@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AmaSON</title>
+    <link rel="icon" href="./src/assets/favicon_io/android-chrome-192x192.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h2 class="nome-site">AmaSON</h2>
-        <h1 class="titulo">Produtos tecnologia</h1>
+        <div class="quick-buttons-div">
+            <button class="quick-button" id="Phone_button">Smartphones</button>
+            <button class="quick-button" id="Pc_button">Computadores</button>
+            <button class="quick-button" id="Periferic_button">Periféricos</button>
+            <button class="quick-button" id="Games_button">Games</button>
+        </div>
         <div class="div-form">
             <form id="product-form" class="product-form">
-                <input type="search" name="product_category" placeholder="Buscar produto" id="product_category" class="filter-category">
+                <input type="search" name="product_category" placeholder="Buscar produto" id="product_category"
+                    class="filter-category">
                 <button type="submit" id="filter-button" class="filter-button">Buscar</button>
             </form>
         </div>
@@ -23,4 +32,5 @@
     <script src="script.js">
     </script>
 </body>
+
 </html>
